@@ -26,9 +26,8 @@ div#slider{
    /* -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
     
 }
-
 .content section{
-    width: 50%;
+        width: 20%;
     margin: 0 auto;
 }
 
