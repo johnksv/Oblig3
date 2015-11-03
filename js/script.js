@@ -1,0 +1,2 @@
+document.getElementById("slider").style.width = document.getElementById("problemSection").offsetWidth+"px";
+document.getElementById("slidewrapper").style.width = (document.getElementById("problemSection").offsetWidth+4)*3+"px";

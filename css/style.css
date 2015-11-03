@@ -1,0 +1,48 @@
+/*
+*
+*
+*/
+
+body{
+	width: 50%;
+	margin: 0 auto;
+	background-color: #EEEEEE;
+}
+div#slider{
+	overflow: hidden;
+
+}
+#slidewrapper{
+	width: 635px;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+.content {
+
+    display: inline-block;
+    width: 916px;
+
+
+   /* -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
+    
+}
+
+.content section{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes mymove {
+    0%   {left: 0px; background: red;}
+    50%  { left: -207px; background: yellow;}
+    100% {left: -414px; background: red;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {left: 0px; }
+    50%  { left: -916px; background: yellow;}
+    100% {left: -1832px; background: blue;}
+}
