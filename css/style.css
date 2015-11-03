@@ -2,6 +2,10 @@
 *
 *
 */
+header{
+    text-align: center;
+    margin: 2em;
+}
 
 body{
 	width: 50%;
@@ -10,24 +14,25 @@ body{
 }
 div#slider{
 	overflow: hidden;
+    width: 100%;
 
 }
 #slidewrapper{
-	width: 635px;
+	width: 300%;
     position: relative;
     animation: mymove 5s infinite;
 }
 .content {
 
     display: inline-block;
-    width: 916px;
+    width: 33%;
 
 
    /* -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
     
 }
 .content section{
-        width: 20%;
+        width: 80%;
     margin: 0 auto;
 }
 
@@ -42,6 +47,6 @@ div#slider{
 /* Standard syntax */
 @keyframes mymove {
     0%   {left: 0px; }
-    50%  { left: -916px; background: yellow;}
+    50%  { left: -916px; }
     100% {left: -1832px; background: blue;}
 }
