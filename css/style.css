@@ -45,6 +45,18 @@ nav div:hover{
 	background-color: #777777;
 }
 
+#firelogo {
+	top: -4px;
+	right: 2em;
+	position: absolute;
+	z-index: 1;
+	height: 10em;
+	width: 10em;
+	border: solid;
+	border-width: 8px;
+	border-color: #777777;
+}
+
 #slidewrapper{
 	width: 302%;
     position: relative;
