@@ -1,11 +1,26 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<title>INSERT TITLE HERE</title>
+		<title>FAL-System</title>
 
+		<!-- Meta tags -->
+		<meta charset="UTF-8">
+		<meta charset="UTF-8">
+		<meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport' />
+		<meta name="keywords" content="fire, firesafety">
+		<meta name="description" content="Dette er et konsept for å gjøre trafikken mer sikker, og forhindre ulykker som følge av blandt annet uoppmerksomme sjåfører.">
+		<meta name="author" content="Co-authored by Stian Stensli, Gustav Berggren, Truls Stensrud, Tobias Blegeberg and John Kasper Svergja">
+
+		<!-- CSS og JS -->
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<script src="./js/script.js"></script>
+		
+		<!-- Side ikon -->
+		<link rel="icon" type="icon" href="http://middleislandfd.org/internet/wp-content/uploads/2011/07/fire.png">
+		
+		<!-- Fonter -->
+		<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Chivo' rel='stylesheet' type='text/css'>
 
 		<noscript>
 		<style type="text/css">#slidewrapper, .content{width:100%;}</style>
@@ -15,53 +30,59 @@
 	<body>
 
 		<header>
-			<h1>Hello World</h1>
+			<h1>Fire Assisting Location System</h1>
 			<nav>
-				<a id="problemlink" href="#">Problemet</a>
-				<a id="solutionlink" href="#">Løsningen</a>
-				<a id="privacylink" href="#">Personvern</a>
-				<a id="datalink" href="#">Datasett</a>
+				<div onclick="prob(this.parentNode.id)">Problemet</div>
+				<div onclick="los(this.parentNode.id)">Løsningen</div>
+				<div onclick="pers(this.parentNode.id)">Personvern</div>
 			</nav>
 		</header>
 		<noscript><strong>You have turned off Javascript. Please enable it to make the webpage work properly.</strong></noscript>
 		<div id="slider">
-			<div id="slidewrapper">
+			<div id="slidewrapper" >
 				<div class="content">
 				
 					<section id="problemSection">
 						<h2>Section</h2>
 						<div class="text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis auctor ante, imperdiet placerat velit luctus sed. Nulla et leo sapien. Etiam posuere justo elit, a rutrum metus faucibus vel. Curabitur ut libero consequat, suscipit velit id, mattis risus. Duis at semper ex. Suspendisse porta nisl ac efficitur efficitur. Suspendisse lacinia dignissim arcu, a aliquam lorem porta eu. Nulla bibendum scelerisque lorem. Duis ultricies nunc felis, sit amet semper arcu malesuada a. Morbi et neque nec arcu ullamcorper egestas. Donec eu nisl viverra, porta nunc quis, vulputate diam. In quis condimentum quam. Sed tincidunt, metus vel maximus ultricies, neque dolor egestas leo, nec finibus sem velit et mauris.</p>
+							<img src="http://i.bnet.com/blogs/a-major-fire-involving-an-abandoned-convent-in-massueville-quebec-canada.jpg">
+							<p>Every year accidental fires causes great damage to buildings all around the world. Material damage worth billions of dollars are lost anually due to fire wreckage. Although the material damages caused by fires and the prevention work itself is indeed mind buggling. Nevertheless the worst fires are those in which lives are lost. Losing a signfiicant other, a family member or a friend in a fire is a great tragedy that more people could be without - this is a tragedy that could happen to anyone.
+								<br><br>The job of a firefighter is not only to fight fires, but to also to save lives - in which is a very dangerous and diffucult task. The firefighters wear a lot of equipment to cope with the dangeruous situation in the best manner possible. The firefighters that enter the building primarily wear equipements like SCBA (Self Contanined Brething Apparatus), hand held tools and ropes to be able to guide around inside a building filled with smoke in the safest way possible. However they do not have equipment that will help them spot people within the building. Without any clear vision the firefighters will have a hard time to locate where trapped people may be. Nowadays the common way for fire fighters to localise people in a fire is to guide themselves around in the building and search. This is not a good solution on how to find fire victims in a prompt manner.</p>
 
-							<p>Aenean auctor scelerisque iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam vitae consectetur diam, sed gravida quam. Proin turpis enim, aliquam ultrices eleifend a, laoreet id lacus. Mauris elementum urna neque, at mollis lacus elementum eu. Duis euismod metus vel urna consequat scelerisque. Phasellus ac mattis felis. Integer congue justo quis lacus lobortis, ac faucibus magna placerat. Donec sed mi id orci scelerisque feugiat. Maecenas vulputate enim vel nulla maximus sodales. Mauris ut pellentesque risus. Duis et augue semper, faucibus nisl at, elementum erat. Ut eu nisi porttitor, pharetra nisl id, egestas erat. Fusce placerat felis enim, scelerisque imperdiet eros ornare sit amet. In hac habitasse platea dictumst. Ut ligula mauris, condimentum sed vulputate nec, aliquet sed purus.</p>
-							<img src="http://placehold.it/124x64">
 						</div>
 
-						<button onclick="slide(this.parentNode.id)">Neste side</button>
+						<button onclick="slide(this.parentNode.id)">Next page</button>
 					</section><!-- End of #problemSection -->
 				</div>
 				<div class="content">
 					<section id="solutionSection">
 						<h2>Section</h2>
 						<div class="text">
-							<p> SectionTekst</p>
-							<img src="http://placehold.it/124x64">
+							<img src="http://frankfortecig.com/wp-content/uploads/2014/07/placeholder-Copy-2.gif">
+							<p>Our solution is to install sensors inside public buildings and firms that will work as an assisting system for the firefighters in the case of a fire. The sensors in which the system will utilize are thermo sensors and motion sensors. The motion sensors that will be installed in every room will detect if there are people in the given room. The thermo sensors will be installed around in the construction in a triangular manner and will detect the exact position of the subjects within the surveilled zone by help of triangulation. <br><br>The information collected by the system will thereby be sent to the task leader of the fire truck. The task leader will get the data on a handheld fire truck device that recives information from an external fire department network, which is linked to the given building. The firefighter task leader can then pass the information on to his men. This will help the firefighters to locialise in which rooms there are people and approxiamately where in the room they are - ensuring that the firefighters will approach directly to the subject instead of spending a huge load of time within the burning building locating people. This will reduce the total time it takes to save people and reduce the firefighers exposure to the fire.</p>
 						</div>
-						<button onclick="slide(this.parentNode.id)">Neste side</button>
+						<button onclick="backslide(this.parentNode.id)">Previous page</button>
+						<button onclick="slide(this.parentNode.id)">Next page</button>
 					</section><!-- End of #solutionSection -->
 				</div>
 				<div class="content">
 					<section id="privacySection">
 						<h2>Section</h2>
 						<div class="text">
-							<p> SectionTekst</p>
-							<img src="http://placehold.it/124x64">
+							<img src="https://gigaom.com/wp-content/uploads/sites/1/2012/02/internet-privacy-spy-computer-magnifying-glass-o.jpg?quality=80&strip=all">
+							<p>The sensors, as far as privacy goes, will not have the ability to trace a person. The motion sensor will only be able to determine if there are people in a room; nothing more. The thermo sensor may solely have the capasity to detect a heated field in the room and will therefore not be able to recognise faces.
+Note that the sensors shall not be able to gather information besides the scenario of a fire alarm - neither shall the motion sensors be turned on when the building is safe and sound. This fire assisting system will only be active when the fire alarm is triggered and will otherwise not collect any data from the sensors. The heat sensors themselves will trigger the fire alarm if they detect a large heated area. 
+
+<br><br>The data could in case of a fire or a fire practice be stored for further purposes; such as fire practice by the firefighters and fire practice by the building administratives themselves. The data collcted can be used for instanse to measure the respose time when a fire alarn is triggered and how people leave the edifice. Still no personal or sensitive information will be collected nor stored.</p>
 						</div>
-						<button onclick="slide(this.parentNode.id)">Neste side</button>
+						<button onclick="backslide(this.parentNode.id)">Previous page</button>
 					</section><!-- End of #privacySection -->
 				</div>
 			</div><!-- End of #slidewrapper -->
 		</div><!-- End of #slider -->
+		<footer>
+			<p>text text text text ...</p>
+		</footer>
 	</body>
 	
 </html>
