@@ -20,33 +20,25 @@ div#slider{
 #slidewrapper{
 	width: 300%;
     position: relative;
-    animation: mymove 5s infinite;
-}
-.content {
-
-    display: inline-block;
-    width: 33%;
-
-
-   /* -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */ 
-    
+    left: 0px;
+    transition: left 1s ease;
 }
 .content section{
         width: 80%;
     margin: 0 auto;
 }
+.content {
 
-
-/* Chrome, Safari, Opera */ 
-@-webkit-keyframes mymove {
-    0%   {left: 0px; background: red;}
-    50%  { left: -207px; background: yellow;}
-    100% {left: -414px; background: red;}
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+        vertical-align: top;    
 }
+.text{
+    overflow: hidden;
+    text-align: justify;
+}
+.text img{
+    float: right;
 
-/* Standard syntax */
-@keyframes mymove {
-    0%   {left: 0px; }
-    50%  { left: -916px; }
-    100% {left: -1832px; background: blue;}
 }

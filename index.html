@@ -5,6 +5,9 @@
 
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<script src="./js/script.js"></script>
+		<noscript>
+		<style type="text/css">#slidewrapper .content{width:100%;}</style>
+		</noscript>
 
 	</head>
 	<body>
@@ -15,6 +18,7 @@
 				<a href="#">Problemet</a>
 				<a href="#">Løsningen</a>
 				<a href="#">Personvern</a>
+				<a href="#">Datasett</a>
 			</nav>
 		</header>
 
@@ -24,25 +28,33 @@
 				
 					<section id="problemSection">
 						<h2>Section</h2>
-						<p> SectionTekst</p>
-						<img src="http://placehold.it/124x64">
-						<button>Neste side</button>
+						<div class="text">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis auctor ante, imperdiet placerat velit luctus sed. Nulla et leo sapien. Etiam posuere justo elit, a rutrum metus faucibus vel. Curabitur ut libero consequat, suscipit velit id, mattis risus. Duis at semper ex. Suspendisse porta nisl ac efficitur efficitur. Suspendisse lacinia dignissim arcu, a aliquam lorem porta eu. Nulla bibendum scelerisque lorem. Duis ultricies nunc felis, sit amet semper arcu malesuada a. Morbi et neque nec arcu ullamcorper egestas. Donec eu nisl viverra, porta nunc quis, vulputate diam. In quis condimentum quam. Sed tincidunt, metus vel maximus ultricies, neque dolor egestas leo, nec finibus sem velit et mauris.</p>
+
+							<p>Aenean auctor scelerisque iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam vitae consectetur diam, sed gravida quam. Proin turpis enim, aliquam ultrices eleifend a, laoreet id lacus. Mauris elementum urna neque, at mollis lacus elementum eu. Duis euismod metus vel urna consequat scelerisque. Phasellus ac mattis felis. Integer congue justo quis lacus lobortis, ac faucibus magna placerat. Donec sed mi id orci scelerisque feugiat. Maecenas vulputate enim vel nulla maximus sodales. Mauris ut pellentesque risus. Duis et augue semper, faucibus nisl at, elementum erat. Ut eu nisi porttitor, pharetra nisl id, egestas erat. Fusce placerat felis enim, scelerisque imperdiet eros ornare sit amet. In hac habitasse platea dictumst. Ut ligula mauris, condimentum sed vulputate nec, aliquet sed purus.</p>
+							<img src="http://placehold.it/124x64">
+						</div>
+						<button onclick="slide()">Neste side</button>
 					</section><!-- End of #problemSection -->
 				</div>
 				<div class="content">
 					<section id="solutionSection">
-							<h2>Section</h2>
-						<p> SectionTekst</p>
-						<img src="http://placehold.it/124x64">
-						<button>Neste side</button>
+						<h2>Section</h2>
+						<div class="text">
+							<p> SectionTekst</p>
+							<img src="http://placehold.it/124x64">
+						</div>
+						<button onclick="slide()">Neste side</button>
 					</section><!-- End of #solutionSection -->
 				</div>
 				<div class="content">
 					<section id="privacySection">
 						<h2>Section</h2>
-						<p> SectionTekst</p>
-						<img src="http://placehold.it/124x64">
-						<button>Neste side</button>
+						<div class="text">
+							<p> SectionTekst</p>
+							<img src="http://placehold.it/124x64">
+						</div>
+						<button onclick="slide()">Neste side</button>
 					</section><!-- End of #privacySection -->
 				</div>
 			</div><!-- End of #slidewrapper -->
