@@ -2,9 +2,11 @@
 <html lang="no">
 	<head>
 		<meta charset="UTF-8">
+		<title>INSERT TITLE HERE</title>
 
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
 		<script src="./js/script.js"></script>
+
 		<noscript>
 		<style type="text/css">#slidewrapper, .content{width:100%;}</style>
 		</noscript>
@@ -15,13 +17,13 @@
 		<header>
 			<h1>Hello World</h1>
 			<nav>
-				<a href="#">Problemet</a>
-				<a href="#">Løsningen</a>
-				<a href="#">Personvern</a>
-				<a href="#">Datasett</a>
+				<a id="problemlink" href="#">Problemet</a>
+				<a id="solutionlink" href="#">Løsningen</a>
+				<a id="privacylink" href="#">Personvern</a>
+				<a id="datalink" href="#">Datasett</a>
 			</nav>
 		</header>
-		<noscript>You have turned off Javascript. Please enable it to make the webpage work properly</noscript>
+		<noscript><strong>You have turned off Javascript. Please enable it to make the webpage work properly.</strong></noscript>
 		<div id="slider">
 			<div id="slidewrapper">
 				<div class="content">
@@ -34,7 +36,8 @@
 							<p>Aenean auctor scelerisque iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam vitae consectetur diam, sed gravida quam. Proin turpis enim, aliquam ultrices eleifend a, laoreet id lacus. Mauris elementum urna neque, at mollis lacus elementum eu. Duis euismod metus vel urna consequat scelerisque. Phasellus ac mattis felis. Integer congue justo quis lacus lobortis, ac faucibus magna placerat. Donec sed mi id orci scelerisque feugiat. Maecenas vulputate enim vel nulla maximus sodales. Mauris ut pellentesque risus. Duis et augue semper, faucibus nisl at, elementum erat. Ut eu nisi porttitor, pharetra nisl id, egestas erat. Fusce placerat felis enim, scelerisque imperdiet eros ornare sit amet. In hac habitasse platea dictumst. Ut ligula mauris, condimentum sed vulputate nec, aliquet sed purus.</p>
 							<img src="http://placehold.it/124x64">
 						</div>
-						<button onclick="slide()">Neste side</button>
+
+						<button onclick="slide(this.parentNode.id)">Neste side</button>
 					</section><!-- End of #problemSection -->
 				</div>
 				<div class="content">
@@ -44,7 +47,7 @@
 							<p> SectionTekst</p>
 							<img src="http://placehold.it/124x64">
 						</div>
-						<button onclick="slide()">Neste side</button>
+						<button onclick="slide(this.parentNode.id)">Neste side</button>
 					</section><!-- End of #solutionSection -->
 				</div>
 				<div class="content">
@@ -54,7 +57,7 @@
 							<p> SectionTekst</p>
 							<img src="http://placehold.it/124x64">
 						</div>
-						<button onclick="slide()">Neste side</button>
+						<button onclick="slide(this.parentNode.id)">Neste side</button>
 					</section><!-- End of #privacySection -->
 				</div>
 			</div><!-- End of #slidewrapper -->
