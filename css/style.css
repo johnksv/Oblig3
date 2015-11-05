@@ -41,6 +41,12 @@ nav div{
 	font-size: 1.5em;
 	font-weight: bold;
 	line-height:1em;
+	background-color:#777777;
+	-webkit-transition: all 0.2s ease; /* Firefox */
+	 -moz-transition: all 0.2s ease; /* WebKit */
+	 -o-transition: all 0.2s ease; /* Opera */
+	 transition: all 0.2s ease; /* Standard */
+	  border-bottom:0px solid #777777 ;
 }
 nav div:hover{
 	border-bottom:8px solid #777777 ;
