@@ -62,6 +62,7 @@ nav div:hover{
 	border: solid;
 	border-width: 8px;
 	border-color: #777777;
+	background-color:white;
 }
 
 #slidewrapper{
