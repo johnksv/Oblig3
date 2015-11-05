@@ -40,9 +40,10 @@ nav div{
 	font-family: "Noto sans";
 	font-size: 1.5em;
 	font-weight: bold;
+	line-height:1em;
 }
 nav div:hover{
-	background-color: #777777;
+	border-bottom:8px solid #777777 ;
 }
 
 #firelogo {
