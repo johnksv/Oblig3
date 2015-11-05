@@ -2,10 +2,6 @@
 *
 *
 */
-header{
-
-}
-
 body{
 	background-color: #efefef;
 	padding: 0;
@@ -18,6 +14,12 @@ h1 {
 	font-size: 3em;
 	margin: 0 10%;
 }
+p {
+    width: 50%;
+    font-size: 1em;
+    font-family: "Chivo";
+}
+
 #slider{
 	overflow: hidden;
 	width: 80%;
@@ -26,44 +28,46 @@ h1 {
 nav {
 	text-align: center;
 	background-color: #777777;
-	width: 100%;
+	width: 80%;
 	height: 3em;
-	padding: 0 10%;
-	margin-bottom: 1em;	
+	margin: 1.5em auto 1.5em auto;
 }
-nav div{
+nav a{
 	margin: 0 4%;
 	padding: 0.5em 5%;
 	float: left;
 	color: black;
 	cursor: pointer;
 	font-family: "Noto sans";
-	font-size: 1.5em;
+	font-size: 1.2em;
 	font-weight: bold;
-	line-height:1em;
+	line-height:1.5em;
 	background-color:#777777;
 	-webkit-transition: all 0.2s ease; /* Firefox */
-	 -moz-transition: all 0.2s ease; /* WebKit */
-	 -o-transition: all 0.2s ease; /* Opera */
-	 transition: all 0.2s ease; /* Standard */
-	  border-bottom:0px solid #777777 ;
+	-moz-transition: all 0.2s ease; /* WebKit */
+	-o-transition: all 0.2s ease; /* Opera */
+	transition: all 0.2s ease; /* Standard */
+	border-bottom:0px solid #777777 ;
 }
-nav div:hover{
-	border-bottom:8px solid #777777 ;
+nav a:hover{
+	border-bottom:10px solid #777777 ;
 }
 
 #firelogo {
 	top: -4px;
-	right: 2em;
+	right: 10%;
 	position: absolute;
 	z-index: 1;
-	height: 10em;
-	width: 10em;
+	width: 8.12em;
 	border: solid;
-	border-width: 8px;
+	border-width: 5px;
 	border-color: #777777;
 }
 
+
+/**************
+    CONTENT SLIDER
+**************/
 #slidewrapper{
 	width: 302%;
     position: relative;
@@ -78,7 +82,8 @@ nav div:hover{
 .content {
     display: inline-block;
     width: 33%;
-	height: 40em;
+	height: auto;
+    min-height: 20em;
     text-align: center;
     vertical-align: top;
     padding-bottom: 2em;    
@@ -88,11 +93,6 @@ nav div:hover{
 .text{
     overflow: hidden;
     text-align: justify;
-}
-p {
-	width: 50%;
-	font-size: 1em;
-	font-family: "Chivo";
 }
 .text img{
     float: right;
@@ -106,4 +106,11 @@ footer {
 	background-color: #777777;
 	height: 10em;
 	padding: 0 10%;
+}
+
+/*************
+ACTIVE SLIDER
+************/
+.activeSlide{
+    background-color: #FF0000;
 }
