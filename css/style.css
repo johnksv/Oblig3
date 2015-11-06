@@ -18,7 +18,7 @@ h2{
 	font-family: "Noto sans";
 }
 p {
-    width: 50%;
+    width: 95%;
     font-size: 1em;
     font-family: "Chivo";
 }
@@ -93,19 +93,19 @@ nav a:hover{
     min-height: 20em;
     text-align: center;
     vertical-align: top;
-    padding-bottom: 2em;    
+    padding-bottom: 2em;
     border: 1px #EF8D22 solid;
     margin-bottom: 1em;
 }
 
 .text{
     overflow: hidden;
-    text-align: justify;
+
 }
 .text img{
     float: right;
-	width: 40%;
-	margin: 0 0 10px 10px;	
+	width: 90%;
+	margin: none;
 }
 
 footer {
@@ -121,9 +121,27 @@ ACTIVE SLIDER
     background-color: #EF8D22;
 }
 
-@media screen and (max width: 480px) {
-	p {
+@media only screen and (min-width: 480px) {
+	.text p {
+
 		width: 90%;
 	}
-	
+	.text img {
+		margin: none;
+		float: left;
+		width: 90%
+	}
+
+@media only screen and (min-width: 800px) {
+	.text {
+		text-align: justify;
+	}
+	.text p {
+		width: 50%;		
+	}
+	.text img {
+		float: right;
+		width: 40%;
+		margin: 0 0 10px 10px;
+	}
 }
