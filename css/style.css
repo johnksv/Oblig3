@@ -22,6 +22,9 @@ p {
     font-size: 1em;
     font-family: "Chivo";
 }
+footer p {
+	width: 100%;
+}
 
 #slider{
 	overflow: hidden;
@@ -58,10 +61,10 @@ nav a:hover{
 
 #firelogo {
 	top: -4px;
-	right: 10%;
+	right: 12%;
 	position: absolute;
 	z-index: 1;
-	width: 8.12em;
+	width: 9em;
 	border: solid;
 	border-width: 5px;
 	border-color: #777777;
