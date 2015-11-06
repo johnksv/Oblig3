@@ -13,6 +13,7 @@ h1 {
 	font-family: "Noto sans";
 	font-size: 3em;
 	margin: 0 10%;
+	width: 70%;
 }
 h2{
 	font-family: "Noto sans";
@@ -60,15 +61,14 @@ nav a:hover{
 }
 
 #firelogo {
-	top: -4px;
 	right: 12%;
 	position: absolute;
 	z-index: 1;
-	width: 9em;
+	width: 10%;
 	border: solid;
-	border-width: 5px;
+	border-width: 2%;
 	border-color: #777777;
-	background-color:white;
+	background-color: white;
 }
 
 
