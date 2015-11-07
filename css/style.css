@@ -120,8 +120,8 @@ button{
     font-family: "Noto sans";
     font-weight: bold;
     line-height:1.5em;
-    width: 8em;
-    height: 3em;
+    min-width: 8em;
+    min-height: 3em;
 }
 button:hover{
     border-bottom:5px solid #EF8D22 ;
