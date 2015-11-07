@@ -15,7 +15,7 @@ function slideTo(a){
 
 	document.getElementById("slidewrapper").style.left = "-"+x+"00%";
 	document.getElementsByTagName("nav")[0].children[x].classList.add("activeSlide");
-	window.location.href="#firelogo";
+	window.location.href="#problem";
 }
 
 function setStyle(){
