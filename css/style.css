@@ -16,10 +16,11 @@ h1 {
 	width: 70%;
 }
 h2{
+    font-size: 1.75em;
 	font-family: "Noto sans";
 }
-p {
-    width: 95%;
+p, span {
+    line-height: 1.5em;
     font-size: 1em;
     font-family: "Chivo";
 }
@@ -66,7 +67,6 @@ nav a:hover{
 	z-index: 1;
 	width: 10%;
 	border: solid;
-	border-width: 2%;
 	border-color: #777777;
 	background-color: white;
 }
@@ -103,18 +103,42 @@ nav a:hover{
 
 .text{
     overflow: hidden;
+    text-align: justify;
 
 }
-.text img{
-    float: right;
-	width: 90%;
-	margin: none;
+.text p {
+    width: 50%;     
 }
+.text img {
+    float: right;
+    width: 40%;
+    margin: 0 0 10px 10px;
+}
+button{
+    text-decoration: none;
+    cursor: pointer;
+    font-family: "Noto sans";
+    font-weight: bold;
+    line-height:1.5em;
+    width: 8em;
+    height: 3em;
+}
+button:hover{
+    border-bottom:5px solid #EF8D22 ;
+}
+
+.hint{
+    display: block;
+    margin-top: 1em;
+    font-style: italic;
+}
+
+
 
 footer {
 	margin-top: 1em;
 	background-color: #AAAAAA;
-	padding: 0 10%;
+	padding: 0.5em 10%;
 }
 
 /*************
@@ -124,27 +148,54 @@ ACTIVE SLIDER
     background-color: #EF8D22;
 }
 
-@media only screen and (min-width: 480px) {
-	.text p {
+@media only screen and (max-width: 1200px) {
+   h1{
+        font-size: 2em;
+    }
+    .text p{
+        width: 100%;
+    }
+    .text img{
+        margin: 0 0 1em 1.5em;
+    }
+    #slidewrapper{
+        width: 301%;
+    }
+}
 
-		width: 90%;
-	}
-	.text img {
-		margin: none;
-		float: left;
-		width: 90%
-	}
+@media only screen and (max-width: 800px) {
+    #firelogo{
+        right:10%;
+    }
+    nav{
+        height: auto;
+    }
+    nav a{
+        margin: 0;
+        float: none;
+        display: block;
+    }
+    nav a:hover{
+        border-bottom: 0;
+    }
+    .content{
+        border: 0;
+        width: 32.9%;
+    }
+    .content section{
+        width: 95%;
+    }
+    .text img{
+        margin: 0 auto;
+        display: block;
+        width: 80%;
+        float:none;
+    }
+}
 
-@media only screen and (min-width: 800px) {
-	.text {
-		text-align: justify;
-	}
-	.text p {
-		width: 50%;		
-	}
-	.text img {
-		float: right;
-		width: 40%;
-		margin: 0 0 10px 10px;
-	}
+@media only screen and (max-width: 480px) {
+    .text p {
+
+        width: 90%;
+    }
 }

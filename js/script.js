@@ -1,3 +1,6 @@
+/*******
+Sliding content
+*******/
 var x = 0;
 
 function slideTo(a){
